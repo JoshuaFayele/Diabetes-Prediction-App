@@ -3,7 +3,7 @@ import streamlit.components.v1 as stc
 
 
 # Import Mini Apps
-from eda_app import eda_app
+from eda_app import run_eda_app
 from ml_app import ml_app
 
 
@@ -39,7 +39,7 @@ def main():
                 """)
        
     elif choice == "Exploratory Data Analysis":
-        eda_app()
+        run_eda_app()
     elif choice == "Machine Learning":
         ml_app()
     else:

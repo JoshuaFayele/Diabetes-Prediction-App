@@ -16,7 +16,7 @@ def load_data(data):
     df = pd.read_csv(data)
     return df
 
-def eda_app():
+def run_eda_app():
     st.subheader("From Exploratory Data Analysis")
     # df = pd.read_csv("data/diabetes_data_upload.csv")
     df = load_data("data/diabetes_data_upload.csv")
