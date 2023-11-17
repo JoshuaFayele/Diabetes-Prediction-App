@@ -16,7 +16,8 @@ def load_data(data):
     df = pd.read_csv(data)
     return df
 
-def eda_app():
+
+def debugger():
     st.subheader("From Exploratory Data Analysis")
     # df = pd.read_csv("data/diabetes_data_upload.csv")
     df = load_data("data/diabetes_data_upload.csv")
@@ -48,21 +49,9 @@ def eda_app():
         with col1:
             with st.expander("Distribution Plot of Gender"):
                 # Using Seaborn
-                #fig = plt.figure()
-                #sns.countplot(df['Gender'])
-                # sns.countplot(x ='Gender', data = df)
-                # st.pyplot()
-                # fig, ax = plt.subplots()
-                # ax.scatter([1, 2, 3], [1, 2, 3])
-                # st.pyplot(fig)
                 fig = plt.figure()
-                df['Gender'].value_counts().plot(kind='bar', color=['orange', 'green'])
+                sns.countplot(df['Gender'])
                 st.pyplot(fig)
-                
-                gen_df = df['Gender'].value_counts().to_frame()
-                gen_df = gen_df.reset_index()
-                gen_df.columns = ["Gender Type", "Counts"]
-                st.dataframe(gen_df)
-                
-                p1 = px.pie(gen_df, names='Gender Type', values='Counts')
-                st.plotly_chart(p1)
+    
+if __name__ == '__debugger__':
+    debugger()
