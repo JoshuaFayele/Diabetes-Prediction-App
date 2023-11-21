@@ -1,6 +1,10 @@
 import streamlit as st
 import streamlit.components.v1 as stc
 
+# Configure Streamlit page
+from PIL import Image
+img = Image.open("data/diabetes.png")
+st.set_page_config(page_title='Diabetes Prediction App', page_icon=img)
 
 # Import Mini Apps
 from eda_app import run_eda_app
@@ -8,7 +12,7 @@ from ml_app import ml_app
 
 
 html_temp = """
-		<div style="background-color:#3872fb;padding:10px;border-radius:10px">
+		<div style="background-color:#6c5b2e;padding:10px;border-radius:10px">
 		<h1 style="color:white;text-align:center;">Early Stage DM Risk Data App </h1>
 		<h4 style="color:white;text-align:center;">Diabetes </h4>
 		</div>
@@ -17,7 +21,7 @@ html_temp = """
 
 
 def main():
-    st.title("Main App")
+    # st.title("Main App")
     stc.html(html_temp)
     
     menu = ["Home", "Exploratory Data Analysis", "Machine Learning", "About"]
