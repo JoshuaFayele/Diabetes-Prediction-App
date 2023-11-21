@@ -74,17 +74,7 @@ def ml_app():
         polyphagia = st.radio("Polyphagia",["Yes", "No"])
         genital_thrush = st.selectbox("Genital Thrush", ["Yes", "No"])
     
-    
-    # - visual blurring 1.Yes, 2.No.
-    # - Itching 1.Yes, 2.No.
-    # - Irritability 1.Yes, 2.No.
-    # - delayed healing 1.Yes, 2.No.
-    # - partial paresis 1.Yes, 2.No.
-    # - muscle stiness 1.Yes, 2.No.
-    # - Alopecia 1.Yes, 2.No.
-    # - Obesity 1.Yes, 2.No.
-    # - Class 1.Positive, 2.Negative.
-    
+        
     with col2:
         visual_blurring = st.selectbox("Visual Blurring", ["Yes", "No"])
         itching = st.radio("Itching", ["Yes", "No"])
