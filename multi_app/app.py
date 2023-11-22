@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as stc
+import webbrowser
 
 # Configure Streamlit page
 from PIL import Image
@@ -13,7 +14,7 @@ from ml_app import ml_app
 
 html_temp = """
 		<div style="background-color:#6c5b2e;padding:10px;border-radius:10px">
-		<h1 style="color:white;text-align:center;">Early Stage DM Risk Data App </h1>
+		<h1 style="color:white;text-align:center;">Early Stage Diabetes Risk Prediction App </h1>
 		<h4 style="color:white;text-align:center;">Diabetes </h4>
 		</div>
 		"""
@@ -47,7 +48,36 @@ def main():
     elif choice == "Machine Learning":
         ml_app()
     else:
-        st.subheader("About")
+        st.subheader("About this App")
+        st.write("""
+                 This app displays data from UC Irvine Machine Learning Repository.
+                 #### Datasource
+                        https://archive.ics.uci.edu/ml/datasets/Early+stage+diabetes+risk+prediction+dataset.
+                The purppose of this App is to predict early stages of diabetes using machine learning models. The prediction was done using Logistic regression. More research can be done to make the prediction of the model better and give better accuracy of result.      
+                 
+                    
+                
+                
+                 """)
+        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            if st.button("X"):
+                webbrowser.open("https://twitter.com/JoshuaFayele")
+        with col2:
+            if st.button("GitHub"):
+                webbrowser.open("https://github.com/JoshuaFayele")
+        with col3:
+            if st.button("Email"):
+                webbrowser.open("mailto:joshuafayele@gmail.com")
+        with col4:
+            if st.button("LinkedIn"):
+                webbrowser.open("https://www.linkedin.com/in/joshuafayele/")
+                
+        # links = ["Twitter", "Github"]
+        # for link in links:
+        #     if link == "Twitter":
+        #         webbrowser.open("https://github.com/JoshuaFayele")
+        # st.button()
     
     
     
