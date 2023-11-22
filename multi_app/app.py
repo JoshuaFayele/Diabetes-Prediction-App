@@ -15,7 +15,6 @@ from ml_app import ml_app
 html_temp = """
 		<div style="background-color:#6c5b2e;padding:10px;border-radius:10px">
 		<h1 style="color:white;text-align:center;">Early Stage Diabetes Risk Prediction App </h1>
-		<h4 style="color:white;text-align:center;">Diabetes </h4>
 		</div>
 		"""
 
@@ -53,11 +52,16 @@ def main():
                  This app displays data from UC Irvine Machine Learning Repository.
                  #### Datasource
                         https://archive.ics.uci.edu/ml/datasets/Early+stage+diabetes+risk+prediction+dataset.
-                The purppose of this App is to predict early stages of diabetes using machine learning models. The prediction was done using Logistic regression. More research can be done to make the prediction of the model better and give better accuracy of result.      
+                The purppose of this App is to predict early stages of diabetes using machine learning models. The prediction was done using Logistic regression. More research can be done to make the prediction of the model better and give better accuracy of result.
+                Your Feedback is very much appreciated.      
                  
                     
                 
                 
+                 """)
+        
+        st.write("""
+                 #### Connect with Me
                  """)
         col1, col2, col3, col4 = st.columns(4)
         with col1:
@@ -72,13 +76,7 @@ def main():
         with col4:
             if st.button("LinkedIn"):
                 webbrowser.open("https://www.linkedin.com/in/joshuafayele/")
-                
-        # links = ["Twitter", "Github"]
-        # for link in links:
-        #     if link == "Twitter":
-        #         webbrowser.open("https://github.com/JoshuaFayele")
-        # st.button()
-    
+                   
     
     
     
