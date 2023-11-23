@@ -1,6 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as stc
 import webbrowser
+from st_functions import st_button, load_css
 
 # Configure Streamlit page
 from PIL import Image
@@ -60,24 +61,44 @@ def main():
                 
                  """)
         
-        st.write("""
-                 #### Connect with Me
-                 """)
-        col1, col2, col3, col4 = st.columns(4)
-        with col1:
-            if st.button("X"):
-                webbrowser.open("https://twitter.com/JoshuaFayele")
-        with col2:
-            if st.button("GitHub"):
-                webbrowser.open("https://github.com/JoshuaFayele")
-        with col3:
-            if st.button("Email"):
-                webbrowser.open("mailto:joshuafayele@gmail.com")
-        with col4:
-            if st.button("LinkedIn"):
-                webbrowser.open("https://www.linkedin.com/in/joshuafayele/")
+        
+        # col1, col2, col3, col4 = st.columns(4)
+        # with col1:
+        #     if st.button("X"):
+        #         webbrowser.open("https://twitter.com/JoshuaFayele")
+        # with col2:
+        #     if st.button("GitHub"):
+        #         webbrowser.open("https://github.com/JoshuaFayele")
+        # with col3:
+        #     if st.button("Email"):
+        #         webbrowser.open("mailto:joshuafayele@gmail.com")
+        # with col4:
+        #     if st.button("LinkedIn"):
+        #         webbrowser.open("https://www.linkedin.com/in/joshuafayele/")
                    
-    
+        load_css()
+
+
+
+        col1, col2, col3, col4, col5 = st.columns(5)
+
+
+        st.header('Joshua Fayele')
+
+# st.info('Developer Advocate, Content Creator and ex-Professor with an interest in Data Science and Bioinformatics')
+
+        icon_size = 20
+
+
+
+        
+        st_button('twitter-x', 'https://twitter.com/JoshuaFayele', 'Follow me on X', icon_size)
+        st_button('linkedin', 'https://www.linkedin.com/in/joshuafayele/', 'Follow me on LinkedIn', icon_size)
+        st_button('email', 'mailto:joshuafayele@gmail.com', 'Send me a mail', icon_size)
+        st_button('medium', 'https://medium.com/@fayoltuns', 'Read my Blogs', icon_size)
+        st_button('github', 'https://github.com/JoshuaFayele', 'Check my Github', icon_size)
+
+
     
     
 if __name__ == '__main__':
