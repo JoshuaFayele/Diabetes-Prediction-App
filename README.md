@@ -1,6 +1,6 @@
 # Early-Stage Diabetes Prediction App
 
-![App Screenshot](https://jf-diabetes-prediction-app.streamlit.app/) <!-- Replace with actual screenshot link if available -->
+![image](https://github.com/user-attachments/assets/f46675dc-6347-4207-af6c-f8ea71fafab2)
 
 ## 🚀 Live App
 **[Click here to try the app](https://jf-diabetes-prediction-app.streamlit.app/)**
