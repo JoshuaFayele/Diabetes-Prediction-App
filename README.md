@@ -61,7 +61,7 @@ This project combines data science, machine learning, and health analytics to cr
 
 ## 🧑‍💻 Developer
 **Joshua Fayele**  
-[LinkedIn](https://www.linkedin.com/in/your-profile) • [GitHub](https://github.com/JoshuaFayele)  
+[LinkedIn](https://www.linkedin.com/in/joshuafayele) • [GitHub](https://github.com/JoshuaFayele)  
 Feel free to connect or reach out!
 
 ---
