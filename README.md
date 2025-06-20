@@ -1,5 +1,10 @@
 # Early-Stage Diabetes Prediction App
 
+![App Screenshot](https://jf-diabetes-prediction-app.streamlit.app/) <!-- Replace with actual screenshot link if available -->
+
+## 🚀 Live App
+**[Click here to try the app](https://jf-diabetes-prediction-app.streamlit.app/)**
+
 An interactive machine learning web app that predicts the likelihood of early-stage diabetes based on user input and clinical symptom data.
 
 ## 🚀 Overview
